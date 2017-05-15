@@ -51,6 +51,10 @@ li {
 /* Header Section */
 /* --------------------------------- */
 
+header {
+    height: 100vh;
+}
+
 nav {
     width: 100%;
     margin-top: 2%;
@@ -64,7 +68,7 @@ nav .row {
 .logo {
     display: inline-block;
     width: auto;
-    height: 80px;
+    height: 100px;
     text-align: left;
 }
 
@@ -92,3 +96,42 @@ nav ul li:first-child:hover {
     color: #fff;
     background-color: #2ecc71;
 }
+
+header .hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* --------------------------------- */
+/* General Section Setup */
+/* --------------------------------- */
+
+
+section {
+    width: 100%;
+    padding: 30px 0;
+}
+
+section h2 {
+    font-family: "Lato";
+    font-weight: normal;
+    text-align: center;
+    word-spacing 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    border-bottom: 2px solid #27ae60;
+    margin: 30px auto;
+}
+
+/* --------------------------------- */
+/* General Section Setup */
+/* --------------------------------- */
