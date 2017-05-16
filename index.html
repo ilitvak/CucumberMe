@@ -3,10 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="stylesheets/font-awesome.css">
-        <link rel="stylesheet" href="stylesheets/pictonic.css">
         <!--[if lt IE 8]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
         <link rel="stylesheet" href="stylesheet/style.css" type='text/css'>
+        <link rel="stylesheet" type="text/css" href="fonts/ionicons.min.css">
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CucumberMe</title>
@@ -18,32 +17,63 @@
                     <a href="#">
                         <img class="logo" src="img/cucumber_logo.jpg" alt="CucumberMe logo">  
                     </a>
-                    <ul>
-                        <li>
-                            <a>Send a Cucumber</a>
-                        </li>
-                        <li>
-                            <a> How It works </a>
-                        </li>
-                        <li>
-                            <a>FAQ's</a>
-                        </li>
-                    </ul>
                 </div>
             </nav>
-            <div class="hero-text-box">
-                <h1>Nothing says hello<br> like a cucumber.</h1>
-            </div>
         </header> 
         <section class="how-it-works">
             <div class="row">
                 <h2>How It Works</h2>
-            </div>
-            <div class="row">
-                <p class="how-it-works-desc">Sending a Cucumber to someone has never been easier. Whether you're<br>
-                playing a prank / sending a cucumber with a message / or just want a giggle - a Cucumber in the mail is the best way to showcase that. 
+                <p class="how-it-works-desc">CucumberMe, the service that sends cucumbers anonymously to a friend / x-boyfriend, x-girlfriend / enemy, or just a friendly cucumber to drop a hint. 
                 </p>
             </div>
+            <div class="row clearfix">
+                <div class="grid-of-icons">
+                    <div class="grid-box">
+                        <i class="ion-ios-cart-outline"></i>
+                        <h3>Choose the size</h3>
+                        <p>Select through a variety of cucumbers, whether small or long, thin or thick. </p>
+                        <select name="cucumberSelection" id="cucumberSelect">
+                            <option value="small">small like your x-boyfriend / husband</option>
+                            <option value="long">long cucumber</option>
+                            <option value="BBC">BBC</option>
+                            <option value="thin">thin cucumber</option>
+                            <option value="girthy">girthy cucumber</option>
+                            <option value="disfigured">disfigured cucumber<sup>*</sup></option>
+                        </select>
+                    </div>
+                    
+                    <div class="grid-box">
+                        <i class="ion-ios-compose-outline"></i>
+                        <h3>Write a brief Message</h3>
+                        <p>Your message will be written on the cucumber. So a simple &mdash; Netflix and chill? can really get your message across. </p>
+                        <form class="form_message" action="" method="post">
+                            <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Write your message here"></textarea>
+                        </form>
+                    </div>
+                    
+                    <div class="grid-box">
+                        <i class="ion-ios-home-outline"></i>
+                        <h3>#Cucumbered</h3>
+                        <p>Send the cucumber. Let it do the talking. </p>
+                    </div>
+                </div> 
+                
+                <div class="cucumber-gallery">
+                    <div class="box-container">
+                        <div class="box">
+                            <img src="img/cucumber_size.png" alt="long_cucumber">
+                        </div>
+                        <div class="box">
+                            <img src="img/cucumber_size.png" alt="long_cucumber">
+                        </div>
+                        <div class="box">
+                            <img src="img/cucumber_size.png" alt="long_cucumber">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         </section>         
     </body>
 </html>
