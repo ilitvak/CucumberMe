@@ -6,6 +6,11 @@
         <!--[if lt IE 8]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
         <link rel="stylesheet" href="stylesheet/style.css" type='text/css'>
         <link rel="stylesheet" type="text/css" href="fonts/ionicons.min.css">
+        <script
+         src="https://code.jquery.com/jquery-3.2.1.min.js"
+         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+         crossorigin="anonymous"></script>
+         <link href="https://fonts.googleapis.com/css?family=Arimo|Roboto:500" rel="stylesheet">
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CucumberMe</title>
@@ -15,7 +20,7 @@
             <nav>
                 <div class="row">
                     <a href="#">
-                        <img class="logo" src="img/cucumber_logo.jpg" alt="CucumberMe logo">  
+                        <img class="logo" id="logo" src="img/cucumber_logo.jpg" alt="CucumberMe logo">  
                     </a>
                 </div>
             </nav>
@@ -30,15 +35,15 @@
                 <div class="grid-of-icons">
                     <div class="grid-box">
                         <i class="ion-ios-cart-outline"></i>
-                        <h3>Choose the size</h3>
+                        <h3>Choose a size</h3>
                         <p>Select through a variety of cucumbers, whether small or long, thin or thick. </p>
                         <select name="cucumberSelection" id="cucumberSelect">
-                            <option value="small">small like your x-boyfriend / husband</option>
-                            <option value="long">long cucumber</option>
                             <option value="BBC">BBC</option>
-                            <option value="thin">thin cucumber</option>
-                            <option value="girthy">girthy cucumber</option>
-                            <option value="disfigured">disfigured cucumber<sup>*</sup></option>
+                            <option value="long">Long cucumber</option>
+                            <option value="thin">Thin cucumber</option>
+                            <option value="girthy">Girthy cucumber</option>
+                            <option value="disfigured">Disfigured cucumber<sup>*</sup></option>
+                            <option value="small">Small like your x-boyfriend</option>
                         </select>
                     </div>
                     
@@ -47,7 +52,10 @@
                         <h3>Write a brief Message</h3>
                         <p>Your message will be written on the cucumber. So a simple &mdash; Netflix and chill? can really get your message across. </p>
                         <form class="form_message" action="" method="post">
-                            <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Write your message here"></textarea>
+                            <div class="text-field">
+                                <label for="text"></label>
+                                <input type="text" name="text" placeholder="write message">
+                            </div>
                         </form>
                     </div>
                     
@@ -60,20 +68,13 @@
                 
                 <div class="cucumber-gallery">
                     <div class="box-container">
-                        <div class="box">
-                            <img src="img/cucumber_size.png" alt="long_cucumber">
-                        </div>
-                        <div class="box">
-                            <img src="img/cucumber_size.png" alt="long_cucumber">
-                        </div>
-                        <div class="box">
-                            <img src="img/cucumber_size.png" alt="long_cucumber">
-                        </div>
+                        <img src="img/iphone_how_it_works.png" alt="iphone with logo">
                     </div>
                 </div>
             </div>
 
             
-        </section>         
+        </section>  
+        <script rel="text/javscript" src="js/js.js"></script>      
     </body>
 </html>
