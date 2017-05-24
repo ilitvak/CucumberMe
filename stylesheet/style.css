@@ -16,6 +16,7 @@
     margin: 0;
     box-sizing: border-box;
     color: #fff;
+    transition: all .5s ease-out;
 }
 
 html {
@@ -250,7 +251,9 @@ input:focus {
 }
 
 .box-container img {
+    position: relative;
     width: 40%;
+    left: -1000px;
 }
 
 /* --------------------------------- */
@@ -303,3 +306,25 @@ section.faq {
 /* --------------------------------- */
 /* Footer section */
 /* --------------------------------- */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 5% 0;
+    top: -525px;
+    background-color: #27ae60;
+    z-index: 1000;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+footer h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    border-bottom: 2px solid #fff;
+    margin: 30px auto;
+}
