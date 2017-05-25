@@ -6,7 +6,7 @@ $(document).ready(function(){
     // Slides in iphone when the user scrolls half way through page
     
     $(window).scroll(function(){
-        if($(window).scrollTop() > 710) {
+        if($(window).scrollTop() >= $(".how-it-works").offset().top) {
             $(".cucumber-gallery .box-container img").css("left", 0);
         }
     });
