@@ -81,7 +81,8 @@ nav a {
 }
 .logo {
     display: inline-block;
-    width: auto;
+    width: 650px;
+    height: auto;
     transition: transform 1.5s ease;
     transform: scale(0);
 }
@@ -378,7 +379,6 @@ textarea::placeholder {
     text-transform: uppercase;
 }
 
-
 footer a {
     display: inline-block;
     width: 90%;
@@ -405,4 +405,86 @@ footer a:hover {
     display: inline-block;
     margin-right: 5px;
     font-size: 25px;
+}
+
+.ion-checkmark {
+    visibility: hidden;
+}
+
+.signature {
+    display:block;
+    width: 50%;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+#heart {
+    
+    color: #44BBFF;
+}
+
+.footer-logo {
+    display: inline-block;
+    width: 90px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.signature p {
+    display: inline-block;
+    height: 87px;
+    font-size: 15px;
+    line-height: 87px;
+}
+
+/* --------------------------------- */
+/* MEDIA QUERY Section */
+/* --------------------------------- */
+
+/* Big Tablets to 1200 pixels */
+@media only screen and (max-width: 1200px){
+    
+    .faq li::before {
+        display: none;
+    }
+    
+    .faq ul {
+        padding: 0 30px;
+    }
+}
+
+/* Small Tablets to Big Tablets */
+@media only screen and (max-width: 1023px){
+    
+}
+
+/* Small Phones to Small Tablets */
+@media only screen and (max-width: 767px) {
+    
+    .logo {
+        width: 560px;
+    }
+    
+    /* How it works section */
+    
+    section {
+        padding: 8% 0;
+    }
+    
+    p.how-it-works-desc {
+        width: 84%;
+    }
+    
+    .grid-box {
+        width: 80%;
+    }
+    
+    .box-container img {
+        width: 48%;
+    }
+}
+
+/* Small Phones from 0 to 480 pixels */
+@media only screen and (max-width:480px) {
+    
 }
