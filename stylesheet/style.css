@@ -437,6 +437,14 @@ footer a:hover {
     line-height: 87px;
 }
 
+
+
+/* Shopify code */
+
+.shopify-buy__layout-horizontal .shopify-buy__product__title {
+    display: none;
+}
+
 /* --------------------------------- */
 /* MEDIA QUERY Section */
 /* --------------------------------- */
@@ -462,7 +470,12 @@ footer a:hover {
 @media only screen and (max-width: 767px) {
     
     .logo {
-        width: 560px;
+        width: 100%;
+        padding: 0 5%;
+    }
+    
+    nav a {
+        width: 100%;
     }
     
     /* How it works section */
@@ -482,9 +495,78 @@ footer a:hover {
     .box-container img {
         width: 48%;
     }
+    
+    select {
+        font-size: 16px;
+    }
+    
+    /* FAQ section */
+    
+    .faq .col {
+        width: 100%;
+    }
+    
+    .faq li::before {
+        display: inline-block;
+    }
+    
+    .faq .col p {
+        font-size: 18px;
+    }
+    
+    
+    /* Footer section */
+    
+    .form-col {
+        width: 80%;
+        margin-top: 100px;
+    }
+    
+    footer form {
+        margin-top: 0;
+    }
 }
 
 /* Small Phones from 0 to 480 pixels */
 @media only screen and (max-width:480px) {
+    
+    section {
+        padding: 15% 0;
+    }
+    
+    .grid-of-icons {
+        width: 100%;
+        float: none;
+    }
+    
+    .grid-box {
+        margin: 0 auto;
+    }
+    
+    .cucumber-gallery {
+        width: 60%; 
+        margin: 10% auto 0;
+        float: none;
+    }
+    
+    .faq li::before {
+        display: none;
+    }
+    
+    footer {
+        padding: 15% 0;
+    }
+    
+    .form-col {
+        width: 85%;
+    }
+    
+    .footer-icons:last-child i {
+        display: none;
+    }
+    
+    .footer-icons:last-child {
+        text-align: right;
+    }
     
 }
