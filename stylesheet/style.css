@@ -441,8 +441,8 @@ footer a:hover {
 
 /* Shopify code */
 
-.shopify-buy__layout-horizontal .shopify-buy__product__title {
-    display: none;
+.shopify-buy__btn-wrapper {
+    text-align: center;
 }
 
 /* --------------------------------- */
