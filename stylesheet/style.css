@@ -154,6 +154,10 @@ section h2::after {
 /* How It Works */
 /* --------------------------------- */
 
+section.how-it-works {
+    padding-bottom: 2%;
+}
+
 .grid-of-icons {
     display: block;
     width: 50%;
@@ -185,8 +189,29 @@ p.how-it-works-desc {
     font-size: 16px;
 }
 
-.grid-box:last-child {
+.grid-box .address-form input {
+    border-bottom: 2px solid #fff;
+}
+
+.grid-box .address-form .text-field {
+    border-bottom: none;
+}
+
+.grid-box .address-form input:nth-child(2) {
+    margin-top: 0;
+}
+
+.grid-box .address-form input {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.grid-box:nth-child(3) {
     padding-bottom: 0;
+}
+
+input[type="text"] {
+    font-size: 15px;
 }
 
 h3 {

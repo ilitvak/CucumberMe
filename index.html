@@ -28,17 +28,148 @@
         <section class="how-it-works">
             <div class="row">
                 <h2>How It Works</h2>
-                <p class="how-it-works-desc">CucumberMe, the service that sends cucumbers anonymously to a friend / x-boyfriend, x-girlfriend / enemy, or just a friendly cucumber to drop a hint. 
+                <p class="how-it-works-desc">CucumberMe, the service that sends cucumbers anonymously to a friend / ex-boyfriend, ex-girlfriend / enemy, or just a friendly cucumber to drop a hint. 
                 </p>
             </div>
             <div class="row clearfix">
                 <div class="grid-of-icons">
+<!--
                     <div class="grid-box">
                         <i class="ion-ios-cart-outline"></i>
                         <h3>Choose a size</h3>
                         <p>Select through a variety of cucumbers, whether small or long, thin or thick. </p>
                         <div id='product-component-1498520733495'></div>
-                        <script type="text/javascript">
+                    </div>
+-->
+                    
+                    <div class="grid-box">
+                        <i class="ion-ios-compose-outline"></i>
+                        <h3>Start by writing a message</h3>
+                        <p>Your message will be written on the cucumber. So a simple &mdash; "Netflix and chill?" can really get your message across. </p>
+                        <form class="form_message" action="" method="post">
+                            <div class="text-field">
+                                <label for="text"></label>
+                                <input type="text" name="text" placeholder="write message (optional)">
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="grid-box">
+                        <i class="ion-android-globe"></i>
+                        <h3>Address of who you want<br> to prank</h3>
+                        <p>Please write below the address of the person who will receive your cucumber</p>
+                        <form class="form_message address-form" action="" method="post">
+                            <div class="text-field">
+                                <label for="address"></label>
+<!--                                <textarea name="address" id="address" cols="10" rows="3"></textarea>-->
+                           <input type="text" name="firstName" placeholder="First & Last Name">
+                           <input type="text" name="address" placeholder="Address">
+                           <input type="text" name="zip" placeholder="State | City | Zip Code">
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="grid-box">
+                        <i class="ion-ios-cart-outline"></i>
+                        <h3>Choose your cucumber</h3>
+                        <p>Select through a variety of cucumbers, whether small or long, thin or thick. </p>
+                        <div id='product-component-1498520733495'></div>
+                    </div>
+                    
+                    <div class="grid-box">
+                        <i class="ion-ios-home-outline"></i>
+                        <h3>#Cucumbered</h3>
+                        <p>Send the cucumber. Let it do the talking. </p>
+                    </div>
+                    
+                    
+                </div> 
+                
+                
+                
+                <div class="cucumber-gallery">
+                    <div class="box-container">
+                        <img src="img/iphone_how_it_works.png" alt="iphone with logo">
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section class="faq clearfix">
+            <div class="row">
+                <h2>Faq</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="col">
+                    <ul>
+                        <li>
+                            <h4>How will the cucumber be delivered?</h4>
+                            <p class="faq-text">Your cucumber will be mailed anonymously in a box that fits the size you chose above.</p>
+                        </li>
+                        <li>
+                            <h4>When will my cucumber be sent out after I order?</h4>
+                            <p class="faq-text">Your cucumber will be sent A.S.A.P.</p>
+                        </li>
+                        <li>
+                            <h4>What if the cucumber spoils during shipping?</h4>
+                            <p class="faq-text">If it does, it will be a bigger insult to the person receiving it.</p>
+                        </li>
+                        <li>
+                            <h4>How can you track shipment?</h4>
+                            <p class="faq-text">You will receive an e-mail with the tracking information of your cucumber.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <h4>How is my message going to be printed?</h4>
+                            <p class="faq-text">Your message will be written on the cucumber via silver marker.</p>
+                        </li>
+                        <li>
+                            <h4>Do we accept returns?</h4>
+                            <p class="faq-text">Unforunately we do not accept returns. Sorry for the inconvenience.</p>
+                        </li>
+                        <li>
+                            <h4>Can you eat the cucumbers?</h4>
+                            <p class="faq-text">Please refrain from eating the cucumbers. They will be written on and may absorb the toxic chemicals used in markers.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="form-col">
+                    <form action="">
+                        <div class="footer-icons">
+                            <i class="ion-android-person"></i>
+                            <input type="text" placeholder="name">    
+                        </div>
+                        <div class="footer-icons">
+                            <i class="ion-ios-email"></i>
+                            <input type="email" placeholder="email">
+                        </div>
+                        
+                        <div class="footer-icons">
+                            <i class="ion-ios-compose"></i>
+                            <textarea name="message" id="message" cols="40" rows="3" placeholder="message"></textarea>
+                        </div>
+                        <div class="footer-icons">
+                            <i class="ion-checkmark"></i>
+                            <a href="#">send</a>  
+                        </div>
+                </form>
+                </div>
+                <div class="signature">
+                    <img class="footer-logo" src="img/cucumber_logo.svg" alt="cucumberlogo">
+                    <p>was made with <i class="ion-heart" id="heart"></i></p>
+                </div>
+            </div>            
+        </footer>
+        <script type="text/javascript">
                         /*<![CDATA[*/
                           (function () {
                             var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -74,6 +205,7 @@
                                 moneyFormat: '${{amount}}',
                                 options: {
                                     "product": { 
+                                        "color": "#000",
                                         "layout": "horizontal", 
                                         "variantId":" all", 
                                         "width": "100%", 
@@ -81,9 +213,10 @@
                                                      "imgWithCarousel":true, "variantTitle":false, 
                                                      "description":true, "buttonWithQuantity":false, "quantity":false
                                                     },
+                                        /* Styling of Buy button itself */
                                         "styles":{
                                             "product":{
-                                                "text-align":"left",
+                                                "text-align":"center",
                                                 "@media (min-width: 601px)": {
                                                     "max-width":"100%",
                                                     "margin-left":"0",
@@ -154,110 +287,8 @@
                           }
                         })();
                         /*]]>*/
-                        </script>
-                    </div>
-                    
-                    <div class="grid-box">
-                        <i class="ion-ios-compose-outline"></i>
-                        <h3>Write a brief Message</h3>
-                        <p>Your message will be written on the cucumber. So a simple &mdash; "Netflix and chill?" can really get your message across. </p>
-                        <form class="form_message" action="" method="post">
-                            <div class="text-field">
-                                <label for="text"></label>
-                                <input type="text" name="text" placeholder="write message">
-                            </div>
-                        </form>
-                    </div>
-                    
-                    <div class="grid-box">
-                        <i class="ion-ios-home-outline"></i>
-                        <h3>#Cucumbered</h3>
-                        <p>Send the cucumber. Let it do the talking. </p>
-                    </div>
-                </div> 
-                
-                <div class="cucumber-gallery">
-                    <div class="box-container">
-                        <img src="img/iphone_how_it_works.png" alt="iphone with logo">
-                    </div>
-                </div>
-            </div>
-        </section>  
-        <section class="faq clearfix">
-            <div class="row">
-                <h2>Faq</h2>
-            </div>
-            <div class="row clearfix">
-                <div class="col">
-                    <ul>
-                        <li>
-                            <h4>How will the cucumber be delivered?</h4>
-                            <p class="faq-text">Your cucumber will be mailed anonymously in a box that fits the size you chose above.</p>
-                        </li>
-                        <li>
-                            <h4>When will my cucumber be sent out after I order?</h4>
-                            <p class="faq-text">Your cucumber will be sent A.S.A.P.</p>
-                        </li>
-                        <li>
-                            <h4>What if the cucumber spoils during shipping?</h4>
-                            <p class="faq-text">If it does, it will be a bigger insult to the person receiving it.</p>
-                        </li>
-                        <li>
-                            <h4>How can you track shipment?</h4>
-                            <p class="faq-text">You will receive an e-mail with the tracking information of your cucumber.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li>
-                            <h4>How is my message going to be printed?</h4>
-                            <p class="faq-text">Your message will be written on the cucumber via black marker.</p>
-                        </li>
-                        <li>
-                            <h4>Do we accept returns?</h4>
-                            <p class="faq-text">Unforunately we do not accept returns. Sorry for the inconvenience.</p>
-                        </li>
-                        <li>
-                            <h4>Can you eat the cucumbers?</h4>
-                            <p class="faq-text">Please refrain from eating the cucumbers. They will be written on and may absorb the toxic chemicals used in markers.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="row">
-                <h2>Contact Us</h2>
-            </div>
-            <div class="row clearfix">
-                <div class="form-col">
-                    <form action="">
-                        <div class="footer-icons">
-                            <i class="ion-android-person"></i>
-                            <input type="text" placeholder="name">    
-                        </div>
-                        <div class="footer-icons">
-                            <i class="ion-ios-email"></i>
-                            <input type="email" placeholder="email">
-                        </div>
                         
-                        <div class="footer-icons">
-                            <i class="ion-ios-compose"></i>
-                            <textarea name="message" id="message" cols="40" rows="3" placeholder="message"></textarea>
-                        </div>
-                        <div class="footer-icons">
-                            <i class="ion-checkmark"></i>
-                            <a href="#">send</a>  
-                        </div>
-                </form>
-                </div>
-                <div class="signature">
-                    <img class="footer-logo" src="img/cucumber_logo.svg" alt="cucumberlogo">
-                    <p>was made with <i class="ion-heart" id="heart"></i></p>
-                </div>
-            </div>            
-        </footer>
+        </script>
         <script rel="text/javscript" src="js/js.js"></script>      
     </body>
 </html>
