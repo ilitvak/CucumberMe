@@ -82,18 +82,33 @@ nav .header-logo-container {
 
 .down-arrow {
     display: block;
-    position: absolute;
     width: 30px;
     height: 30px;
-    top: 90%;
-    left: 50%;
     border: 1px solid #000;
     border-width: 0 0 2px 2px;
     margin: 0 auto;
-    -webkit-transform: rotate(-45deg) translate(-50%, -50%);
-    -ms-transform: rotate(-45deg) translate(-50%, -50%);
-    transform: rotate(-45deg) translate(-50%, -50%);
-   
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: all 1s ease-out;
+}
+
+nav a:nth-child(2) {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 50%;
+    animation: bounce 2s infinite linear;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 
 .logo {

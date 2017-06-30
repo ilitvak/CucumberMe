@@ -14,6 +14,12 @@ $(document).ready(function(){
         }, 1200);
     })
     
+    // After 2 seconds displays down arrow for logo section
+    
+    setInterval(function(){
+        $(".down-arrow").css("opacity", 1);
+    }, 2000);
+    
     // Slides in iphone when the user scrolls half way through page
     
     $(window).scroll(function(){
