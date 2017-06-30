@@ -3,6 +3,17 @@ $(document).ready(function(){
     // Animates logo on window load.
     $("#logo").css("transform", "scale(1)");
     
+    
+    // Scrolls to section and checks whether its desktop or mobile
+    
+    $(".scroller").click(function(e){
+        e.preventDefault();
+        var aSelector = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(aSelector).offset().top
+        }, 1200);
+    })
+    
     // Slides in iphone when the user scrolls half way through page
     
     $(window).scroll(function(){

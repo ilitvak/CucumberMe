@@ -73,12 +73,29 @@ nav .row {
     display: table;
     width: 100%;
 }
-nav a {
+nav .header-logo-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.down-arrow {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 90%;
+    left: 50%;
+    border: 1px solid #000;
+    border-width: 0 0 2px 2px;
+    margin: 0 auto;
+    -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+    -ms-transform: rotate(-45deg) translate(-50%, -50%);
+    transform: rotate(-45deg) translate(-50%, -50%);
+   
+}
+
 .logo {
     display: inline-block;
     width: 650px;
@@ -155,7 +172,7 @@ section h2::after {
 /* --------------------------------- */
 
 section.how-it-works {
-    padding-bottom: 2%;
+    padding-bottom: 2%;  
 }
 
 .grid-of-icons {
