@@ -42,8 +42,12 @@ $(document).ready(function(){
     
     // Dynamic footer section height adjusted by section faq height
     
-    $("footer").css( "height", $("section.faq").outerHeight() );
-        
+    if ($(window).width() <= 480) {
+        $("footer").css("height", "auto");
+    }
+    else {
+       $("footer").css( "height", $("section.faq").outerHeight() ); 
+    }
 });
     
 var heart = document.getElementById("heart");
