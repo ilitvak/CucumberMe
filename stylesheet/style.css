@@ -595,6 +595,10 @@ footer a:hover {
         padding: 15% 0;
     }
     
+    section.how-it-works {
+        padding-bottom: 15%;
+    }
+    
     .grid-of-icons {
         width: 100%;
         float: none;
