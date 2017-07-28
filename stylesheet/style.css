@@ -494,7 +494,8 @@ footer a:hover {
 /* Shopify code */
 
 .shopify-cont {
-    margin-top: 30px;
+    width: 75%;
+    margin: 30px auto 0;
 }
 
 /* --------------------------------- */
