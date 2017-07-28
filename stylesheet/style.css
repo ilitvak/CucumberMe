@@ -238,13 +238,7 @@ p.how-it-works-desc {
     font-weight: normal;
 }
 
-/*
-.grid-box:nth-child(3) {
-    padding-bottom: 0;
-}
-*/
-
-input[type="text"] {
+input, textarea {
     font-size: 15px;
 }
 
