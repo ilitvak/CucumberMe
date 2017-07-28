@@ -100,7 +100,7 @@ nav a:nth-child(2) {
     top: 90%;
     left: 50%;
     animation: bounce 2s infinite linear;
-}
+}  
 
 @keyframes bounce {
     from {
@@ -238,9 +238,11 @@ p.how-it-works-desc {
     font-weight: normal;
 }
 
+/*
 .grid-box:nth-child(3) {
     padding-bottom: 0;
 }
+*/
 
 input[type="text"] {
     font-size: 15px;
@@ -476,7 +478,6 @@ footer a:hover {
 }
 
 #heart {
-    
     color: #44BBFF;
 }
 
@@ -498,8 +499,8 @@ footer a:hover {
 
 /* Shopify code */
 
-.shopify-buy__btn-wrapper {
-    text-align: center;
+.shopify-cont {
+    margin-top: 30px;
 }
 
 /* --------------------------------- */

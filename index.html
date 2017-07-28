@@ -20,7 +20,7 @@
             <nav>
                 <div class="row">
                     <a href=".how-it-works" class="header-logo-container scroller">
-                        <img class="logo" id="logo" src="img/cucumber_logo.svg" alt="CucumberMe logo">  
+                        <img class="logo" id="logo" src="img/logo-last.svg" alt="CucumberMe logo">  
                     </a>
                     <a href=".how-it-works" class="scroller">
                         <div class="down-arrow"></div>
@@ -76,7 +76,7 @@
                         <i class="ion-ios-cart-outline"></i>
                         <h3>Choose your cucumber</h3>
                         <p>Select through a variety of cucumbers, whether small or long, thin or thick. </p>
-                        <div id='product-component-1498520733495'></div>
+                        <div id='product-component-30bc3c2b08b' class="shopify-cont"></div>
                     </div>
                     
                     <div class="grid-box">
@@ -84,11 +84,7 @@
                         <h3>#Cucumbered</h3>
                         <p>Send the cucumber. Let it do the talking. </p>
                     </div>
-                    
-                    
                 </div> 
-                
-                
                 
                 <div class="cucumber-gallery">
                     <div class="box-container">
@@ -167,130 +163,166 @@
                 </form>
                 </div>
                 <div class="signature">
-                    <img class="footer-logo" src="img/cucumber_logo.svg" alt="cucumberlogo">
+                    <img class="footer-logo" src="img/logo-last.svg" alt="cucumberlogo">
                     <p>was made with <i class="ion-heart" id="heart"></i></p>
                 </div>
             </div>            
         </footer>
         <script type="text/javascript">
-                        /*<![CDATA[*/
-                          (function () {
-                            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-                            if (window.ShopifyBuy) {
-                              if (window.ShopifyBuy.UI) {
-                                ShopifyBuyInit();
-                              } else {
-                                loadScript();
-                              }
-                            } else {
-                              loadScript();
-                            }
+        /*<![CDATA[*/
 
-                          function loadScript() {
-                            var script = document.createElement('script');
-                            script.async = true;
-                            script.src = scriptURL;
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-                            script.onload = ShopifyBuyInit;
-                          }
+        (function () {
+          var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+          if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+              ShopifyBuyInit();
+            } else {
+              loadScript();
+            }
+          } else {
+            loadScript();
+          }
 
-                          function ShopifyBuyInit() {
-                            var client = ShopifyBuy.buildClient({
-                              domain: 'cucumberme-com.myshopify.com',
-                              apiKey: '00c68ad493051f981c94ff62aa4d9955',
-                              appId: '6',
-                            });
+          function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+          }
 
-                            ShopifyBuy.UI.onReady(client).then(function (ui) {
-                              ui.createComponent('product', {
-                                id: [10347031181],
-                                node: document.getElementById('product-component-1498520733495'),
-                                moneyFormat: '${{amount}}',
-                                options: {
-                                    "product": { 
-                                        "color": "#000",
-                                        "layout": "horizontal", 
-                                        "variantId":" all", 
-                                        "width": "100%", 
-                                        "contents": {"img":false, 
-                                                     "imgWithCarousel":true, "variantTitle":false, 
-                                                     "description":true, "buttonWithQuantity":false, "quantity":false
-                                                    },
-                                        /* Styling of Buy button itself */
-                                        "styles":{
-                                            "product":{
-                                                "text-align":"center",
-                                                "@media (min-width: 601px)": {
-                                                    "max-width":"100%",
-                                                    "margin-left":"0",
-                                                    "margin-bottom":"50px"
-                                                }
-                                            },
-                                            
-                                            /* TITLE OF SHOPIFY BUTTON SECTION */
-                                            "title":{ 
-                                                "font-size":"26px",
-                                                "display": "none",
-                                                "text-align": "center",
-                                                "color": "#fff",
-                                            },
-                                            "price":{
-                                                "font-size":"18px",
-                                                "font-weight": "bold",
-                                                "margin-top": "15px",
-                                                "width": "100%",
-                                                "text-align": "center",
-                                                "color": "#fff"
-                                            },
-                                            "compareAt":{
-                                                "font-size":"15px"
-                                            }
-                                        }
-                                    },
-                                    "cart":{
-                                        "contents":{
-                                            "button":true
-                                        },
-                                        "styles":{
-                                            "footer":{
-                                                "background-color":"#ffffff"
-                                            }
-                                        }
-                                    },
-                                    "modalProduct":{
-                                        "contents":{
-                                            "img":false,
-                                            "imgWithCarousel":true,
-                                            "variantTitle":false,
-                                            "buttonWithQuantity":true,
-                                            "button":false,
-                                            "quantity":false
-                                        },
-                                        "styles":{
-                                            "product":{
-                                                "@media (min-width: 601px)":{
-                                                    "max-width":"100%",
-                                                    "margin-left":"0px",
-                                                    "margin-bottom":"0px"
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "productSet":{
-                                        "styles":{
-                                            "products":{
-                                                "@media (min-width: 601px)":
-                                                {"margin-left":"-20px"}
-                                            }
-                                        }
-                                    }
-                                },
-                              });
-                            });
-                          }
-                        })();
-                        /*]]>*/
-                        
+          function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+              domain: 'cucumberme-com.myshopify.com',
+              apiKey: '00c68ad493051f981c94ff62aa4d9955',
+              appId: '6',
+            });
+
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+              ui.createComponent('product', {
+                id: [10347031181],
+                node: document.getElementById('product-component-30bc3c2b08b'),
+                moneyFormat: '%24%7B%7Bamount%7D%7D',
+                options: {
+          "product": {
+            "variantId": "all",
+            "width": "100%",
+            "contents": {
+              "imgWithCarousel": false,
+              "variantTitle": false,
+              "description": false,
+              "buttonWithQuantity": false,
+              "quantity": false
+            },
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0",
+                  "margin-bottom": "50px"
+                },
+              "title": {
+                  "display": "none"  
+                },
+              "price": {
+                  "margin-top": "5px",
+                  "font-size": "16px",
+                  "font-weight": "bold",
+                  "color": "#fff"
+                }
+              },
+              "button": {
+                "background-color": "#9F7043",
+                ":hover": {
+                  "background-color": "#a68363"
+                },
+                ":focus": {
+                  "background-color": "#9F7043"
+                }
+              },
+              "compareAt": {
+                "font-size": "12px"
+              }
+            }
+          },
+          "cart": {
+            "contents": {
+              "button": true
+            },
+            "styles": {
+              // Changes the background color of the button on the landing page
+              "button": {
+                "background-color": "9F7043",
+                ":hover": {
+                  "background-color": "#a68363"
+                },
+                ":focus": {
+                  "background-color": "#9F7043"
+                }
+              },
+              "footer": {
+                "background-color": "#ffffff"
+              }
+            }
+          },
+          "modalProduct": {
+            "contents": {
+              "img": false,
+              "imgWithCarousel": true,
+              "variantTitle": false,
+              "buttonWithQuantity": true,
+              "button": false,
+              "quantity": false
+            },
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0px",
+                  "margin-bottom": "0px"
+                }
+              },
+              // changes the button background color for the cart
+              "button": {
+                "background-color": "#9F7043",
+                ":hover": {
+                  "background-color": "#a68363"
+                },
+                ":focus": {
+                  "background-color": "#9F7043"
+                }
+              }
+            }
+          },
+          "toggle": {
+            "styles": {
+              // Changes the background color of the side modal of the cart on landing page
+              "toggle": {
+                "background-color": "9F7043",
+                ":hover": {
+                  "background-color": "#a68363"
+                },
+                ":focus": {
+                  "background-color": "#9F7043"
+                }
+              }
+            }
+          },
+          "productSet": {
+            "styles": {
+              "products": {
+                "@media (min-width: 601px)": {
+                  "margin-left": "-20px"
+                }
+              }
+            }
+          }
+        }
+              });
+            });
+          }
+        })();
+        /*]]>*/
         </script>
         <script rel="text/javscript" src="js/js.js"></script>      
     </body>
