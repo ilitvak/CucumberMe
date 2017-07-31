@@ -288,6 +288,9 @@ input:focus {
     box-shadow: none;
 }
 
+textarea {
+    padding: 10px 25px 10px 15px;
+}
 
 
 /* --------------------------------- */
@@ -496,6 +499,10 @@ footer a:hover {
 .shopify-cont {
     width: 75%;
     margin: 30px auto 0;
+}
+
+.shopify-buy__option-select__select {
+    font-weight: bold;
 }
 
 /* --------------------------------- */

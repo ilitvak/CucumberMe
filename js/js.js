@@ -48,6 +48,23 @@ $(document).ready(function(){
     else {
        $("footer").css( "height", $("section.faq").outerHeight() ); 
     }
+    
+    
+    /*Hides input text when clicked on*/
+
+    $(".text-fields input, .text-fields textarea").click(function(){
+       $(this).next().hide();
+    });
+
+    $(".text-fields input, .text-fields textarea").focusin(function(){
+        $(this).click();
+    });
+
+    $(".text-fields input, .text-fields textarea").blur(function(){
+        if($(this).val() == "") {
+            $(this).next().show();
+        }
+    });
 });
     
 var heart = document.getElementById("heart");

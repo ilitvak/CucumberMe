@@ -60,16 +60,7 @@
                     <div class="grid-box">
                         <i class="ion-android-globe"></i>
                         <h3>Address of who you want<br> to prank</h3>
-                        <p>Please write below the address of the person who will receive your cucumber</p>
-                        <form class="form_message address-form" action="" method="post">
-                            <div class="text-field">
-                                <label for="address"></label>
-<!--                                <textarea name="address" id="address" cols="10" rows="3"></textarea>-->
-                           <input type="text" name="firstName" placeholder="First & Last Name">
-                           <input type="text" name="address" placeholder="Address">
-                           <input type="text" name="zip" placeholder="State | City | Zip Code">
-                            </div>
-                        </form>
+                        <p>During checkout you will be prompted to input the address of the person to whom you will send the cucumber. </p>
                     </div>
                     
                     <div class="grid-box">
@@ -130,7 +121,7 @@
                         </li>
                         <li>
                             <h4>Can you eat the cucumbers?</h4>
-                            <p class="faq-text">Please refrain from eating the cucumbers. They will be written on and may absorb the toxic chemicals used in markers.</p>
+                            <p class="faq-text">Please refrain from eating the cucumbers. They will be written on and may absorb the chemicals used in markers.</p>
                         </li>
                     </ul>
                 </div>
@@ -142,17 +133,17 @@
             </div>
             <div class="row clearfix">
                 <div class="form-col">
-                    <form action="">
-                        <div class="footer-icons">
+                    <form action="email.php" method="post">
+                        <div class="footer-icons text-fields">
                             <i class="ion-android-person"></i>
-                            <input type="text" placeholder="name">    
+                            <input type="text" placeholder="name" autocomplete="false" requred>  
                         </div>
-                        <div class="footer-icons">
+                        <div class="footer-icons text-fields">
                             <i class="ion-ios-email"></i>
-                            <input type="email" placeholder="email">
+                            <input type="email" placeholder="email" autocomplete="false" requred>
                         </div>
                         
-                        <div class="footer-icons">
+                        <div class="footer-icons text-fields">
                             <i class="ion-ios-compose"></i>
                             <textarea name="message" id="message" cols="40" rows="3" placeholder="message"></textarea>
                         </div>
@@ -229,7 +220,7 @@
                   "font-size": "16px",
                   "font-weight": "bold",
                   "color": "#fff"
-                }
+                },
               },
               "button": {
                 "width": "100%",
@@ -242,7 +233,9 @@
                 }
               },
               "compareAt": {
-                "font-size": "12px"
+                "font-size": "15px",
+                "color": "#FF8300",
+                "font-weight": "bold"
               }
             }
           },
@@ -299,12 +292,12 @@
             "styles": {
               // Changes the background color of the side modal of the cart on landing page
               "toggle": {
-                "background-color": "9F7043",
+                "background-color": "#e67e22",
                 ":hover": {
-                  "background-color": "#a68363"
+                  "background-color": "#d35400"
                 },
                 ":focus": {
-                  "background-color": "#9F7043"
+                  "background-color": "#d35400"
                 }
               }
             }
@@ -327,7 +320,6 @@
         </script>
         
         <!-- GOOGLE ANALYTICS TRACKING CODE -->
-        
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
