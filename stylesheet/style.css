@@ -268,7 +268,7 @@ select option {
 
 input {
     width: 100%;
-    border: none;
+    border: 2px solid #fff;
     background-color: transparent;
     text-align: center;
 }
@@ -287,11 +287,6 @@ input:focus {
     -moz-box-shadow: none;
     box-shadow: none;
 }
-
-textarea {
-    padding: 10px 25px 10px 15px;
-}
-
 
 /* --------------------------------- */
 /* Cucumber Gallery */
@@ -370,6 +365,7 @@ section.faq {
 footer {
     position: relative;
     width: 100%;
+    height: auto !important;
     padding: 5% 0;
     z-index: 1000;
     background-color:#9F7043;
@@ -396,9 +392,9 @@ footer form {
 
 footer input {
     display: inline-block;
-    width: 90%;
+    width: 100%;
     padding: 10px 25px 10px 15px;
-    border: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     margin-bottom: 15px;
     text-align: left;
     text-transform: uppercase;
@@ -419,9 +415,15 @@ footer input:focus {
     border: 2px solid #27ae60;
 }
 
+footer .message-container textarea:focus {
+    border: none;
+    border-bottom: 2px solid #27ae60;
+}
+
 textarea {
     display: inline-block;
-    width: 90%;
+    width: 100%;
+    padding: 10px 25px 10px 15px;
     border: 2px solid #fff;
     vertical-align: middle;
     font-family: Arial;
@@ -430,14 +432,13 @@ textarea {
 }
 
 textarea::placeholder {
-    padding: 10px 25px 10px 15px;
     color: #fff;
     text-transform: uppercase;
 }
 
 footer a {
     display: inline-block;
-    width: 90%;
+    width: 100%;
     padding: 15px 40px;
     margin-top: 15px;
     background-color: #27ae60;
@@ -492,8 +493,6 @@ footer a:hover {
     line-height: 87px;
 }
 
-
-
 /* Shopify code */
 
 .shopify-cont {
@@ -501,8 +500,14 @@ footer a:hover {
     margin: 30px auto 0;
 }
 
-.shopify-buy__option-select__select {
-    font-weight: bold;
+.shopify-buy-frame--toggle.is-active.is-sticky{
+    right: 20px !important;
+}
+
+/* google recaptcha */
+
+.g-recaptcha {
+    margin-top: 15px;
 }
 
 /* --------------------------------- */

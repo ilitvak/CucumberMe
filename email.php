@@ -1,4 +1,6 @@
 <?php
+
+
 // check if token is set, and then if it's not an empty string
 if( !isset( $_POST['token'] ) || $_POST['token'] == '' )
     die( json_encode( '1' ) );
@@ -16,7 +18,7 @@ curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
 curl_setopt( $ch, CURLOPT_POST, 1 );
 
 // Specify the data fields
-curl_setopt( $ch, CURLOPT_POSTFIELDS, array( 'secret' => '6LdemxkUAAAAAGkN8nXB35Rge6GiY7d3KtW575h4', 'response' => $_POST['token'] ) );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, array( 'secret' => '6LfiYCsUAAAAACfuVzgoTaqbs0h8_aPeKoDHorfX', 'response' => $_POST['token'] ) );
 
 // Execute the result, then decode the JSON object returned so we have a PHP array
 $result = json_decode( curl_exec( $ch ) );

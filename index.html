@@ -134,21 +134,24 @@
             <div class="row clearfix">
                 <div class="form-col">
                     <form action="email.php" method="post">
-                        <div class="footer-icons text-fields">
-                            <i class="ion-android-person"></i>
-                            <input type="text" placeholder="name" autocomplete="false" requred>  
+                        <div class="footer-icons text-fields name-container">
+<!--                            <i class="ion-android-person"></i>-->
+                            <input type="text" id="input-name" name="name" autocomplete="false" placeholder="name" required> 
+                            <label for="input-name" data-req-text="Name"></label> 
                         </div>
-                        <div class="footer-icons text-fields">
-                            <i class="ion-ios-email"></i>
-                            <input type="email" placeholder="email" autocomplete="false" requred>
+                        <div class="footer-icons text-fields email-container">
+<!--                            <i class="ion-ios-email"></i>-->
+                            <input type="email" id="email-input" name="email" placeholder="Email" autocomplete="false" required>
+                            <label for="input-name" data-req-text="Email"></label>
                         </div>
                         
-                        <div class="footer-icons text-fields">
-                            <i class="ion-ios-compose"></i>
-                            <textarea name="message" id="message" cols="40" rows="3" placeholder="message"></textarea>
+                        <div class="footer-icons text-fields message-container">
+<!--                            <i class="ion-ios-compose"></i>-->
+                            <textarea name="message" id="message-input" placeholder="Message" cols="40" rows="3" ></textarea>
                         </div>
                         <div class="footer-icons">
-                            <i class="ion-checkmark"></i>
+<!--                            <i class="ion-checkmark"></i>-->
+                            <div class="g-recaptcha" data-sitekey="6LfiYCsUAAAAAJE6Z5QziXX2i8eUDarqRoixL8aL"></div>
                             <a href="#">send</a>  
                         </div>
                 </form>
@@ -292,7 +295,7 @@
             "styles": {
               // Changes the background color of the side modal of the cart on landing page
               "toggle": {
-                "background-color": "#e67e22",
+                "background-color": "#FF8300",
                 ":hover": {
                   "background-color": "#d35400"
                 },
