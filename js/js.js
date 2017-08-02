@@ -51,7 +51,7 @@ $(document).ready(function(){
     
     // Form submission section 
     
-    $("form").submit(function(e){
+    $(".footer-form").submit(function(e){
     e.preventDefault();
     $.post(
         $(this).attr("action"),

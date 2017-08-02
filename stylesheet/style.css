@@ -288,6 +288,11 @@ input:focus {
     box-shadow: none;
 }
 
+.cucumber-message {
+    border: none;
+}
+
+
 /* --------------------------------- */
 /* Cucumber Gallery */
 /* --------------------------------- */
@@ -410,14 +415,9 @@ footer input::placeholder {
     font-weight: normal;
 }
 
-footer input:focus {
+footer input:focus, footer .message-container textarea:focus {
     overflow: hidden;
     border: 2px solid #27ae60;
-}
-
-footer .message-container textarea:focus {
-    border: none;
-    border-bottom: 2px solid #27ae60;
 }
 
 textarea {
@@ -431,25 +431,31 @@ textarea {
     outline: none;
 }
 
+.message-container textarea:focus {
+    transition: none;
+}
+
 textarea::placeholder {
     color: #fff;
     text-transform: uppercase;
 }
 
-footer a {
+footer .submit {
     display: inline-block;
     width: 100%;
     padding: 15px 40px;
+    border: none;
+    border-radius: 2px;
     margin-top: 15px;
+    letter-spacing: 1.2px;
     background-color: #27ae60;
     font-size: 17px;
-    font-weight: bold;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
 }
 
-footer a:hover {
+footer .submit:hover {
     background-color: #2ecc71;
 }
 

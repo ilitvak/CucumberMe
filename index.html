@@ -52,7 +52,7 @@
                         <form class="form_message" action="" method="post">
                             <div class="text-field">
                                 <label for="text"></label>
-                                <input type="text" name="text" placeholder="write message (optional)">
+                                <input class="cucumber-message" type="text" name="text" placeholder="write message (optional)">
                             </div>
                         </form>
                     </div>
@@ -127,34 +127,31 @@
                 </div>
             </div>
         </section>
+        
         <footer>
             <div class="row">
                 <h2>Contact Us</h2>
             </div>
             <div class="row clearfix">
                 <div class="form-col">
-                    <form action="email.php" method="post">
+                    <form class="footer-form" action="email.php" method="post">
                         <div class="footer-icons text-fields name-container">
-<!--                            <i class="ion-android-person"></i>-->
                             <input type="text" id="input-name" name="name" autocomplete="false" placeholder="name" required> 
                             <label for="input-name" data-req-text="Name"></label> 
                         </div>
                         <div class="footer-icons text-fields email-container">
-<!--                            <i class="ion-ios-email"></i>-->
                             <input type="email" id="email-input" name="email" placeholder="Email" autocomplete="false" required>
                             <label for="input-name" data-req-text="Email"></label>
                         </div>
                         
                         <div class="footer-icons text-fields message-container">
-<!--                            <i class="ion-ios-compose"></i>-->
                             <textarea name="message" id="message-input" placeholder="Message" cols="40" rows="3" ></textarea>
                         </div>
                         <div class="footer-icons">
-<!--                            <i class="ion-checkmark"></i>-->
                             <div class="g-recaptcha" data-sitekey="6LfiYCsUAAAAAJE6Z5QziXX2i8eUDarqRoixL8aL"></div>
-                            <a href="#">send</a>  
+                            <input type="submit" id="submit" class="submit" value="Send"> 
                         </div>
-                </form>
+                    </form>
                 </div>
                 <div class="signature">
                     <img class="footer-logo" src="img/logo-last.svg" alt="cucumberlogo">
@@ -162,6 +159,7 @@
                 </div>
             </div>            
         </footer>
+        
         <script type="text/javascript">
         /*<![CDATA[*/
 
