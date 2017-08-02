@@ -136,19 +136,19 @@
                 <div class="form-col">
                     <form class="footer-form" action="email.php" method="post">
                         <div class="footer-icons text-fields name-container">
-                            <input type="text" id="input-name" name="name" autocomplete="false" placeholder="name" required> 
+                            <input type="text" id="input-name" name="name" autocomplete="false" placeholder="Your Name" required> 
                             <label for="input-name" data-req-text="Name"></label> 
                         </div>
                         <div class="footer-icons text-fields email-container">
-                            <input type="email" id="email-input" name="email" placeholder="Email" autocomplete="false" required>
+                            <input type="email" id="email-input" name="email" placeholder="Your Email" autocomplete="false" required>
                             <label for="input-name" data-req-text="Email"></label>
                         </div>
                         
                         <div class="footer-icons text-fields message-container">
-                            <textarea name="message" id="message-input" placeholder="Message" cols="40" rows="3" ></textarea>
+                            <textarea id="message-input" name="message" placeholder="Message" cols="40" rows="3" ></textarea>
                         </div>
                         <div class="footer-icons">
-                            <div class="g-recaptcha" data-sitekey="6LfiYCsUAAAAAJE6Z5QziXX2i8eUDarqRoixL8aL"></div>
+                            <div class="g-recaptcha" data-sitekey="6LfiYCsUAAAAAJE6Z5QziXX2i8eUDarqRoixL8aL" data-callback="recaptchaCallBack"></div>
                             <input type="submit" id="submit" class="submit" value="Send"> 
                         </div>
                     </form>

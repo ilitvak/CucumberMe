@@ -72,17 +72,16 @@ $(document).ready(function(){
         }
         ); 
     });
-    
-    
-    // defining recaptcha token
-    
-    var recaptchaToken = ""; 
-    function recaptchaCallBack(token) {
-    // prints token once recaptcha challenge is completed
-    // console.log(token);
-    recaptchaToken = token;
-    }
 });
+
+// defining recaptcha token
+
+var recaptchaToken = ""; 
+function recaptchaCallBack(token) {
+// prints token once recaptcha challenge is completed
+console.log("Steven I am hacking into your computer: " + token);
+recaptchaToken = token;
+}
     
 var heart = document.getElementById("heart");
     
