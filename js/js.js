@@ -70,8 +70,18 @@ $(document).ready(function(){
             window.scrollTo(0,0);
             window.location.reload();
         }
-    ); 
+        ); 
     });
+    
+    
+    // defining recaptcha token
+    
+    var recaptchaToken = ""; 
+    function recaptchaCallBack(token) {
+    // prints token once recaptcha challenge is completed
+    // console.log(token);
+    recaptchaToken = token;
+    }
 });
     
 var heart = document.getElementById("heart");
