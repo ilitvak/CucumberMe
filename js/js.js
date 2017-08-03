@@ -51,6 +51,7 @@ $(document).ready(function(){
     
     // Form submission section 
     
+
     $(".footer-form").submit(function(e){
     e.preventDefault();
     $.post(
@@ -65,16 +66,18 @@ $(document).ready(function(){
         function(response){
             // place modal pop up info here for css
             if(JSON.parse(response) ==  0){
-                alert("Your message has been sent");
+                alert("Yay! your message has been sent");
+                 window.location.reload();
+                 window.scrollTo(0,0);
             }
             else {
-                alert("Sorry. There was an error submitting your message. Please try again, later.");
+                alert("Sorry. You need to complete the captcha for your email to be sent. Please try again");
             }
-            window.scrollTo(0,0);
-            window.location.reload();
         }
         ); 
     });
+
+
 });
 
 // defining recaptcha token
@@ -82,7 +85,7 @@ $(document).ready(function(){
 var recaptchaToken = ""; 
 function recaptchaCallBack(token) {
 // prints token once recaptcha challenge is completed
-console.log("Google Recatpcha Token: " + token);
+//console.log("Google Recatpcha Token: " + token);
 recaptchaToken = token;
 }
     
