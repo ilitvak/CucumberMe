@@ -61,12 +61,15 @@ $(document).ready(function(){
             message: $("#message-input").val(),
             token: recaptchaToken
         },
+
         function(response){
             // place modal pop up info here for css
-            if( response == '0' )
+            if(JSON.parse(response) ==  0){
                 alert("Your message has been sent");
-            else
+            }
+            else {
                 alert("Sorry. There was an error submitting your message. Please try again, later.");
+            }
             window.scrollTo(0,0);
             window.location.reload();
         }
@@ -79,7 +82,7 @@ $(document).ready(function(){
 var recaptchaToken = ""; 
 function recaptchaCallBack(token) {
 // prints token once recaptcha challenge is completed
-console.log("Steven I am hacking into your computer: " + token);
+console.log("Google Recatpcha Token: " + token);
 recaptchaToken = token;
 }
     

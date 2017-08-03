@@ -402,7 +402,7 @@ footer input {
     border-bottom: 2px solid #fff;
     margin-bottom: 15px;
     text-align: left;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     transition: none;
 }
 
