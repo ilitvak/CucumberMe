@@ -209,33 +209,36 @@ p.how-it-works-desc {
 }
 
 .grid-box {
-    width: 60%;
+    width: 75%;
     padding-bottom: 5%;
-    margin-right: 15%;
     text-align: center;
 }
 
 .grid-box p {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
 }
 
-.grid-box .address-form input {
-    border-bottom: 2px solid #fff;
+.grid-box h3 {
+    text-decoration: underline;
 }
 
-.grid-box .address-form .text-field {
-    border-bottom: none;
+.grid-box .shopify-button {
+    display: block;
+    width: 80%;
+    height: auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 15px auto 0;
+    text-decoration: none;
+    background-color: #9F7043;
+    font-size: 17px;
+    color: #fff;
 }
 
-.grid-box .address-form input:nth-child(2) {
-    margin-top: 0;
-}
-
-.grid-box .address-form input {
-    margin-top: 10px;
-    font-weight: normal;
+.shopify-button:hover {
+    background-color: #e67e22;
 }
 
 input, textarea {
@@ -565,6 +568,10 @@ footer .submit:hover {
     
     .grid-box {
         width: 80%;
+    }
+    
+    .grid-box .shopify-button {
+        font-weight: bold;
     }
     
     .box-container img {
