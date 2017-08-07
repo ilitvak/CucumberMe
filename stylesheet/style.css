@@ -313,7 +313,7 @@ input:focus {
 
 .box-container img {
     position: relative;
-    width: 40%;
+    width: 50%;
     left: -1000px;
 }
 
@@ -563,19 +563,38 @@ footer .submit:hover {
     }
     
     p.how-it-works-desc {
-        width: 84%;
+        width: 90%;
+        font-weight: bold;
     }
     
     .grid-box {
-        width: 80%;
+        width: 90%;
+        padding-bottom: 10%;
     }
     
     .grid-box .shopify-button {
         font-weight: bold;
     }
     
-    .box-container img {
-        width: 48%;
+    .grid-box p, .grid-box h3 {
+        font-family: Arial;
+        font-weight: bold;
+    }
+    
+    .grid-box h3 {
+        font-size: 19px;
+    }
+    
+    .grid-box p {
+        font-size: 17px;
+    }
+    
+    .grid-box:last-child {
+        padding-bottom: 0;
+    }
+    
+    .cucumber-gallery {
+        display: none;
     }
     
     select {
