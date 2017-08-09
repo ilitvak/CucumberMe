@@ -186,13 +186,10 @@ section h2::after {
 /* How It Works */
 /* --------------------------------- */
 
-section.how-it-works {
-    padding-bottom: 2%;  
-}
 
 .grid-of-icons {
     display: block;
-    width: 50%;
+    width: 100%;
     float: right;
 }
 
@@ -209,9 +206,20 @@ p.how-it-works-desc {
 }
 
 .grid-box {
-    width: 75%;
-    padding-bottom: 5%;
+    width: 45%;
+    padding: 0 2% 5%;
+    margin-right: 8%;
     text-align: center;
+    float: left;
+}
+
+.grid-box:nth-child(even) {
+    margin-right: 0;
+    float: right;
+}
+
+.grid-box:nth-child(3), .grid-box:nth-child(4)  {
+    padding-bottom: 0;
 }
 
 .grid-box p {
@@ -226,7 +234,7 @@ p.how-it-works-desc {
 
 .grid-box .shopify-button {
     display: block;
-    width: 80%;
+    width: 350px;
     height: auto;
     padding: 10px 10px;
     border-radius: 5px;
@@ -306,6 +314,7 @@ input:focus {
 /* --------------------------------- */
 
 .cucumber-gallery {
+    display: none;
     width: 50%;
     margin-top: 10%;
     float: right;
@@ -379,7 +388,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto !important;
-    padding: 5% 0;
+    padding: 5% 0 2%;
     z-index: 1000;
     background-color:#9F7043;
     transition: top 1s ease-in;
@@ -395,6 +404,27 @@ footer h2::after {
     width: 70px;
     border-bottom: 2px solid #fff;
     margin: 30px auto;
+}
+
+footer .row {
+    text-align: center;
+}
+
+.contact-us-button {
+    display: inline-block;
+    width: 300px;
+    padding: 10px 10px;
+    border-radius: 6px;
+    margin: 5% 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #27ae60;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact-us-button:hover {
+    background-color: #2ecc71;
 }
 
 
@@ -413,6 +443,8 @@ footer input {
 /*    text-transform: uppercase;*/
     transition: none;
 }
+
+
 
 footer label {
     margin-top: 10px;
@@ -538,10 +570,40 @@ footer .submit:hover {
     .faq ul {
         padding: 0 30px;
     }
+    
+    .grid-box .shopify-button {
+        width: 300px;
+    }
+    
+/*
+    footer .row .contact-us-button {
+        width: 300px;
+    }
+*/
 }
 
 /* Small Tablets to Big Tablets */
 @media only screen and (max-width: 1023px){
+    
+    /* How it works section */
+    
+    .grid-box {
+        padding: 0 5% 5%;
+    }
+    
+    .grid-box h3 {
+        font-size: 18px;
+    }
+    
+    .grid-box p {
+        font-size: 16px;
+    }
+    
+    .grid-box .shopify-button {
+        width: 300px;
+        padding: 6px;
+        font-size: 16px;
+    }
     
 }
 
@@ -567,6 +629,10 @@ footer .submit:hover {
         padding: 8% 0;
     }
     
+    section.how-it-works {
+        padding-bottom: 8%;
+    }
+    
     p.how-it-works-desc {
         width: 90%;
         font-weight: bold;
@@ -582,6 +648,16 @@ footer .submit:hover {
         width: 80%;
         padding-bottom: 10%;
         margin: 0 auto;
+        float: none;
+    }
+    
+    .grid-box:nth-child(even) {
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .grid-box:nth-child(3) {
+        padding-bottom: 10%;
     }
     
     .grid-box .shopify-button {
@@ -603,6 +679,10 @@ footer .submit:hover {
     
     .grid-box:last-child {
         padding-bottom: 0;
+    }
+    
+    footer .row .contact-us-button {
+        width: 300px;
     }
     
     .cucumber-gallery .iphone {
@@ -657,11 +737,17 @@ footer .submit:hover {
     }
     
     .grid-box {
+        width: 90%;
+        padding: 0 5% 10% 5%;
         margin: 0 auto;
     }
     
-        .grid-box:last-child {
+    .grid-box:last-child {
         padding-bottom: 0;
+    }
+    
+    footer .row .contact-us-button {
+        width: 250px; 
     }
     
     .cucumber-gallery {
@@ -686,6 +772,12 @@ footer .submit:hover {
     
     .footer-icons:last-child {
         text-align: right;
+    }
+    
+    
+    /* Small Phones from 0 to 480 pixels */
+    @media only screen and (max-width: 360px) {
+        
     }
     
 }
