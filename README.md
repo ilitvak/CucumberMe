@@ -8,6 +8,7 @@ CucumberMe is your way of anonymously sending cucumbers to a friend, ex or anyon
 * CSS3
 * Vanilla JavaScript
 * jQuery
+* Shopify
 * Love
 
 ## Link To Site
