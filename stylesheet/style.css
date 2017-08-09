@@ -776,8 +776,47 @@ footer .submit:hover {
     
     
     /* Small Phones from 0 to 480 pixels */
-    @media only screen and (max-width: 360px) {
+    @media only screen and (max-width: 380px) {
         
+        .how-it-works h2 {
+            font-size: 30px;
+        }
+        
+        p.how-it-works-desc {
+            width: 80%;
+            font-size: 18px;
+        }
+        
+        .grid-box h3 {
+            font-size: 14px;
+        }
+        
+        .grid-box p {
+            font-size: 14px;
+        }
+        
+        .grid-box .shopify-button {
+            width: 250px;
+            font-size: 14px;
+        }
+        
+        .faq h2 {
+            font-size: 30px;
+        }
+        
+        .faq h4 {
+            font-size: 18px;
+        }
+        
+        .faq p {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+        
+        footer .row .contact-us-button {
+            width: 200px;
+            font-size: 15px;
+        }
     }
     
 }
