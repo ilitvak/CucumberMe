@@ -357,23 +357,19 @@ section.faq {
     display: inline-block;
 }
 
-.faq li::before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border: 2px solid #27ae60;
-}
-
 .faq p, .faq h4 {
     display: inline-block;
     color: #27ae60;
 }
 
 .faq .col {
-    width: 50%;
-    text-align: center;
+    width: 40%;
+    text-align: left;
     float: left;
+}
+
+.faq .col:first-child {
+    margin-right: 20%;
 }
 
 .faq .col li {
@@ -381,8 +377,9 @@ section.faq {
 }
 
 .faq .col p {
-    width: 75%;
+    font-size: 18px;
     font-weight: 400;
+    letter-spacing: 1px;
     color: #9F7043;
 }
 
@@ -416,21 +413,52 @@ footer .row {
     text-align: center;
 }
 
+footer .row:first-child {
+    margin-bottom: 5%;
+}
+
 .contact-us-button {
     display: inline-block;
     width: 300px;
     padding: 10px 10px;
     border-radius: 6px;
-    margin: 5% 0;
-    vertical-align: middle;
+    margin-bottom: 5%;
+    vertical-align: top;
     text-decoration: none;
     background-color: #27ae60;
     font-size: 18px;
+    font-weight: bold;
     text-align: center;
 }
 
 .contact-us-button:hover {
     background-color: #2ecc71;
+}
+
+.instagram-cont {
+    display: inline-block;
+    margin-left: 5%;
+    text-decoration: none;
+}
+
+.instagram-cont:hover {
+    color: #27ae60;
+}
+
+.ion-social-instagram-outline {
+    font-size: 40px; 
+    vertical-align: middle;
+}
+
+.instagram-cont::after {
+    content: "Instagram";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #fff;
 }
 
 
