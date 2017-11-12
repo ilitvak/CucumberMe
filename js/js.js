@@ -18,6 +18,7 @@ $(document).ready(function(){
     
     setInterval(function(){
         $(".down-arrow").css("opacity", 1);
+        $("nav a p").css("opacity", 1);
     }, 2000);
     
     // Slides in iphone when the user scrolls half way through page

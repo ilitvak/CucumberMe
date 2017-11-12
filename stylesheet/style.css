@@ -100,7 +100,14 @@ nav a:nth-child(2) {
     top: 90%;
     left: 50%;
     animation: bounce 2s infinite linear;
-}  
+} 
+
+nav a p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    opacity: 0;
+}
 
 @keyframes bounce {
     from {
@@ -407,6 +414,11 @@ footer h2::after {
     width: 70px;
     border-bottom: 2px solid #fff;
     margin: 30px auto;
+}
+
+footer row p {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 footer .row {
