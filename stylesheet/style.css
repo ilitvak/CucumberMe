@@ -103,6 +103,7 @@ nav a:nth-child(2) {
 } 
 
 nav a p {
+    text-align: center;
     font-size: 14px;
     font-weight: bold;
     color: #000;
@@ -447,30 +448,34 @@ footer .row:first-child {
     background-color: #2ecc71;
 }
 
-.instagram-cont {
+.ion-social-instagram-outline, .ion-social-facebook {
+    font-size: 40px; 
+    vertical-align: middle;
+}
+
+.social-icon-cont {
     display: inline-block;
     margin-left: 5%;
     text-decoration: none;
 }
 
-.instagram-cont:hover {
-    color: #27ae60;
-}
-
-.ion-social-instagram-outline {
-    font-size: 40px; 
-    vertical-align: middle;
-}
-
-.instagram-cont::after {
-    content: "Instagram";
+.social-icon-cont::after {
+    content: "";
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 18px;
     font-weight: bold;
     color: #fff;
+}
+
+.social-icon-cont:nth-child(2)::after {
+    content: "Instagram";
+}
+
+.social-icon-cont:nth-child(3)::after {
+    content: "Facebook";
 }
 
 
@@ -690,6 +695,8 @@ footer .submit:hover {
         left: 0;
     }
     
+    
+    
     /* How it works section */
     
     section {
@@ -748,8 +755,14 @@ footer .submit:hover {
         padding-bottom: 0;
     }
     
+    footer .row p {
+        padding: 0 5%;
+    }
+    
     footer .row .contact-us-button {
+        display: block;
         width: 300px;
+        margin: 0 auto 5%;
     }
     
     .cucumber-gallery .iphone {
@@ -835,6 +848,11 @@ footer .submit:hover {
         padding: 15% 0;
     }
     
+    .social-icon-cont {
+        display: inline-block;
+        margin-top: 5%;
+    }
+    
     .form-col {
         width: 85%;
     }
@@ -846,55 +864,54 @@ footer .submit:hover {
     .footer-icons:last-child {
         text-align: right;
     }
+}
     
     
-    /* Small Phones from 0 to 480 pixels */
-    @media only screen and (max-width: 380px) {
+/* Small Phones from 0 to 480 pixels */
+@media only screen and (max-width: 380px) {
         
-        .how-it-works h2 {
-            font-size: 30px;
-        }
-        
-        p.how-it-works-desc {
-            width: 80%;
-            font-size: 18px;
-        }
-        
-        .grid-box {
-            width: 100%;
-            padding: 0 7% 10%;
-        }
-        
-        .grid-box h3 {
-            font-size: 17px;
-        }
-        
-        .grid-box p {
-            font-size: 16px;
-        }
-        
-        .grid-box .shopify-button {
-            width: 250px;
-            font-size: 14px;
-        }
-        
-        .faq h2 {
-            font-size: 30px;
-        }
-        
-        .faq h4 {
-            font-size: 18px;
-        }
-        
-        .faq p {
-            margin-top: 10px;
-            font-size: 24px;
-        }
-        
-        footer .row .contact-us-button {
-            width: 200px;
-            font-size: 15px;
-        }
+    .how-it-works h2 {
+        font-size: 30px;
     }
-    
+
+    p.how-it-works-desc {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .grid-box {
+        width: 100%;
+        padding: 0 7% 10%;
+    }
+
+    .grid-box h3 {
+        font-size: 17px;
+    }
+
+    .grid-box p {
+        font-size: 16px;
+    }
+
+    .grid-box .shopify-button {
+        width: 250px;
+        font-size: 14px;
+    }
+
+    .faq h2 {
+        font-size: 30px;
+    }
+
+    .faq h4 {
+        font-size: 18px;
+    }
+
+    .faq p {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    footer .row .contact-us-button {
+        width: 200px;
+        font-size: 15px;
+    }
 }
